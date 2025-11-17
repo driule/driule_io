@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-body: 'Inter', sans-serif;
+  --font-futuristic: 'Orbitron', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
+  color: #f0f0f0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated background stars */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, rgba(0, 245, 255, 0.3), transparent),
+    radial-gradient(2px 2px at 60% 70%, rgba(183, 148, 246, 0.3), transparent),
+    radial-gradient(1px 1px at 50% 50%, rgba(255, 107, 157, 0.3), transparent),
+    radial-gradient(1px 1px at 80% 10%, rgba(168, 230, 207, 0.2), transparent),
+    radial-gradient(2px 2px at 90% 40%, rgba(0, 245, 255, 0.2), transparent);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  animation: starfield 20s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes starfield {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Soft glow effect for sections */
+@layer utilities {
+  .glow-soft {
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.1);
+  }
+  
+  .glow-soft-purple {
+    box-shadow: 0 0 20px rgba(183, 148, 246, 0.1);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #00f5ff 0%, #b794f6 50%, #ff6b9d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-ghibli {
+    background: linear-gradient(135deg, rgba(168, 230, 207, 0.1) 0%, rgba(168, 216, 234, 0.1) 100%);
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f5ff, #b794f6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00f5ff, #ff6b9d);
+}
+
