@@ -51,7 +51,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Interested in collaborating? Have a project in mind? Let's connect and build something
+            Interested in collaborating? Have a project in mind? Let&apos;s connect and build something
             amazing together.
           </motion.p>
 

@@ -39,12 +39,12 @@ export default function About() {
               className="space-y-6 text-lg text-gray-300 leading-relaxed"
             >
               <p>
-                I'm a developer passionate about creating innovative experiences at the intersection
+                I&apos;m a developer passionate about creating innovative experiences at the intersection
                 of games, blockchain, and web technologies.
               </p>
               <p>
                 As the founder of <span className="text-neon-cyan font-semibold">Codyfight</span>,
-                I've built a platform that combines competitive coding with gaming elements,
+                I&apos;ve built a platform that combines competitive coding with gaming elements,
                 creating a unique experience for developers worldwide.
               </p>
               <p>

@@ -1,109 +1,46 @@
-# driule.io - Personal Brand Website
+# driule.io
 
-A stunning, animated landing page showcasing driule's expertise in game development, blockchain, web dev, and innovative projects. Combining sci-fi high-tech aesthetics with soft Ghibli-inspired animations.
+Personal brand website showcasing expertise in game development, blockchain, web dev, and innovative projects. A stunning animated landing page combining sci-fi high-tech aesthetics with soft Ghibli-inspired animations.
 
-## 🚀 Tech Stack
-
-- **Next.js 14** (App Router) - React framework with SSR/SSG
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Utility-first styling
-- **Framer Motion** - Smooth animations
-- **Lucide React** - Beautiful icons
-
-## 🎨 Design Features
-
-- **Sci-Fi High-Tech**: Neon accents, dark backgrounds, futuristic UI
-- **Ghibli Softness**: Pastel gradients, organic shapes, gentle animations
-- **Fully Responsive**: Mobile-first design
-- **Smooth Animations**: Scroll-triggered animations and micro-interactions
-- **Performance Optimized**: Fast loading, optimized images, code splitting
-
-## 📦 Installation
+## 🚀 Quick Start
 
 ```bash
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the site.
+Visit [http://localhost:3000](http://localhost:3000) to view the site.
 
-## 🏗️ Project Structure
+## 🎨 Features
 
-```
-├── app/
-│   ├── layout.tsx      # Root layout with metadata
-│   ├── page.tsx        # Main landing page
-│   └── globals.css     # Global styles and animations
-├── components/
-│   ├── Hero.tsx        # Hero section with animated particles
-│   ├── About.tsx       # About section
-│   ├── Projects.tsx    # Projects showcase
-│   ├── Skills.tsx      # Skills section
-│   └── Contact.tsx     # Contact section
-└── PLAN.md            # Detailed plan and design concepts
-```
+- **Modern Stack**: Next.js 14, TypeScript, Tailwind CSS, Framer Motion
+- **Sci-Fi Design**: Neon accents, dark backgrounds, futuristic UI
+- **Ghibli Aesthetics**: Soft pastel gradients, organic animations
+- **Fully Responsive**: Mobile-first design
+- **Performance Optimized**: Fast loading, code splitting
 
-## 🎯 Customization
+## 📚 Documentation
 
-### Update Content
+All detailed documentation is available in the [`.ai`](./.ai/) directory:
 
-1. **Hero Section** (`components/Hero.tsx`): Update tagline and description
-2. **About Section** (`components/About.tsx`): Update bio and skills
-3. **Projects** (`components/Projects.tsx`): Add your real projects with links
-4. **Skills** (`components/Skills.tsx`): Update skill categories and items
-5. **Contact** (`components/Contact.tsx`): Update social links and contact info
+- **[Quick Start Guide](./.ai/QUICKSTART.md)** - Getting started and customization
+- **[Project Plan](./.ai/PLAN.md)** - Design concepts and technical decisions
+- **[Deployment Guide](./.ai/DEPLOYMENT.md)** - Deployment options and instructions
+- **[GitHub Pages Setup](./.ai/GITHUB_PAGES_SETUP.md)** - GitHub Pages configuration
+- **[Cloudflare DNS Setup](./.ai/CLOUDFLARE_DNS_SETUP.md)** - DNS configuration guide
 
-### Update Colors
+## 🌐 Live Site
 
-Edit `tailwind.config.ts` to customize the color palette:
-- `space.*` - Dark background colors
-- `neon.*` - Neon accent colors
-- `ghibli.*` - Soft Ghibli-inspired colors
+Deployed at [https://driule.io](https://driule.io)
 
-### Update Metadata
+## 🛠️ Tech Stack
 
-Edit `app/layout.tsx` to update SEO metadata, title, and description.
-
-## 🚢 Deployment
-
-### Vercel (Recommended)
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-```
-
-Or connect your GitHub repository to [Vercel](https://vercel.com) for automatic deployments.
-
-### Other Platforms
-
-The site can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- Cloudflare Pages
-- Self-hosted Node.js server
-
-## 📝 Notes
-
-- All content is in English as requested
-- The design combines sci-fi and Ghibli aesthetics
-- Fully responsive and optimized for performance
-- Uses Next.js App Router for modern React patterns
-- SSR/SSG enabled for better SEO and performance
-
-## 🔮 Future Enhancements
-
-- Blog section
-- Project detail pages
-- Interactive 3D elements (Three.js)
-- Dark/light mode toggle
-- Multi-language support
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages + Cloudflare
 
 ---
 

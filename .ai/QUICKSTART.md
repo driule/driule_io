@@ -67,16 +67,9 @@ npm run dev
 
 ## 🌐 Deployment
 
-### Vercel (Easiest)
-1. Push to GitHub
-2. Connect repo to Vercel
-3. Deploy automatically
+Deployed to GitHub Pages at `https://driule.io`.
 
-### Manual Build
-```bash
-npm run build
-npm start
-```
+For deployment instructions, see `DEPLOYMENT.md` and `GITHUB_PAGES_SETUP.md`.
 
 ## 💡 Design Ideas Implemented
 
