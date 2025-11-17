@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Twitter, Mail, Github, ExternalLink, Linkedin } from "lucide-react";
+import { Twitter, Github, ExternalLink, Linkedin } from "lucide-react";
 
 const socialLinks = [
   {
@@ -23,12 +23,6 @@ const socialLinks = [
     icon: Github,
     url: "https://github.com/driule",
     color: "text-gray-400 hover:text-neon-cyan",
-  },
-  {
-    name: "Email",
-    icon: Mail,
-    url: "mailto:contact@driule.io",
-    color: "text-gray-400 hover:text-neon-purple",
   },
 ];
 
