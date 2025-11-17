@@ -8,10 +8,10 @@ const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-futuristic" })
 export const metadata: Metadata = {
   metadataBase: new URL("https://driule.io"),
   title: {
-    default: "driule | Developer & Creator",
+    default: "driule | Making dev fun",
     template: "%s | driule",
   },
-  description: "Building dev stuff. Passionate about creating meaningful software and learning along the way.",
+  description: "Building stuff with curiosity.",
   keywords: [
     "developer",
     "game development",
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "driule | Developer & Creator",
-    description: "Building dev stuff. Passionate about creating meaningful software and learning along the way.",
+    title: "driule | Making dev fun",
+    description: "Building stuff with curiosity.",
     url: "https://driule.io",
     siteName: "driule.io",
     type: "website",
@@ -59,14 +59,14 @@ export const metadata: Metadata = {
         url: "https://driule.io/og-image.png",
         width: 1200,
         height: 630,
-        alt: "driule - Developer & Creator",
+        alt: "driule - Making dev fun",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "driule | Developer & Creator",
-    description: "Building dev stuff. Passionate about creating meaningful software and learning along the way.",
+    title: "driule | Making dev fun",
+    description: "Building stuff with curiosity.",
     creator: "@driule_io",
     images: ["https://driule.io/og-image.png"],
   },
@@ -87,9 +87,9 @@ export default function RootLayout({
     "@type": "Person",
     name: "driule",
     url: "https://driule.io",
-    jobTitle: "Developer & Creator",
+    jobTitle: "Making dev fun",
     description:
-      "Building dev stuff. Passionate about creating meaningful software and learning along the way.",
+      "Building stuff with curiosity.",
     sameAs: [
       "https://github.com/driule",
       "https://x.com/driule_io",
