@@ -18,6 +18,7 @@ const config: Config = {
           cyan: "#00f5ff",
           purple: "#b794f6",
           pink: "#ff6b9d",
+          green: "#00ff88",
         },
         ghibli: {
           green: "#a8e6cf",
@@ -26,8 +27,27 @@ const config: Config = {
         },
       },
       fontFamily: {
-        futuristic: ["Orbitron", "sans-serif"],
+        heading: ["Orbitron", "sans-serif"],
+        futuristic: ["Orbitron", "sans-serif"], // Alias for backward compatibility
         body: ["Inter", "sans-serif"],
+        text: [
+          "Courier New",
+          "Courier",
+          "Lucida Console",
+          "Monaco",
+          "Menlo",
+          "Consolas",
+          "monospace",
+        ],
+        mono: [
+          "Courier New",
+          "Courier",
+          "Lucida Console",
+          "Monaco",
+          "Menlo",
+          "Consolas",
+          "monospace",
+        ],
       },
       animation: {
         float: "float 6s ease-in-out infinite",

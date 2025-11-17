@@ -39,18 +39,19 @@ export default function About() {
               className="space-y-6 text-lg text-gray-300 leading-relaxed"
             >
               <p>
-                I&apos;m a developer passionate about creating innovative experiences at the intersection
-                of games, blockchain, and web technologies.
+                Build games, blockchain tools, web apps. Formerly co-founded{" "}
+                <a
+                  href="https://x.com/codyfight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neon-green font-semibold hover:text-neon-cyan transition-colors underline decoration-neon-green/50 hover:decoration-neon-cyan/50"
+                >
+                  @codyfight
+                </a>{" "}
+                — competitive coding platform.
               </p>
               <p>
-                As the founder of <span className="text-neon-cyan font-semibold">Codyfight</span>,
-                I&apos;ve built a platform that combines competitive coding with gaming elements,
-                creating a unique experience for developers worldwide.
-              </p>
-              <p>
-                My work spans game development, blockchain solutions, web applications, and
-                developer tools. I believe in building products that are both technically excellent
-                and delightful to use.
+                Focus on what works. Code that solves problems. Tools that make sense.
               </p>
             </motion.div>
 
@@ -70,7 +71,11 @@ export default function About() {
                       isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
                     }
                     transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                    className="bg-space-light/50 backdrop-blur-sm rounded-xl p-6 glow-soft border border-neon-cyan/20 hover:border-neon-cyan/50 transition-all duration-300"
+                    className={`bg-space-light/50 backdrop-blur-sm rounded-xl p-6 border transition-all duration-300 ${
+                      index === 2
+                        ? "glow-soft-green border-neon-green/20 hover:border-neon-green/50"
+                        : "glow-soft border-neon-cyan/20 hover:border-neon-cyan/50"
+                    }`}
                   >
                     <Icon className={`w-8 h-8 ${skill.color} mb-3`} />
                     <p className="text-sm font-medium text-gray-300">{skill.label}</p>

@@ -7,24 +7,24 @@ import { useRef } from "react";
 const skillCategories = [
   {
     category: "Game Development",
-    skills: ["Unity", "Game Design", "C#", "Game Mechanics"],
+    skills: ["Design", "Mechanics", "Tech", "Graphics"],
     colorClass: "text-neon-pink",
     bgClass: "bg-neon-pink/10",
     borderClass: "border-neon-pink/30",
   },
   {
-    category: "Blockchain",
-    skills: ["Solidity", "Web3", "Smart Contracts", "DeFi"],
-    colorClass: "text-neon-purple",
-    bgClass: "bg-neon-purple/10",
-    borderClass: "border-neon-purple/30",
-  },
-  {
     category: "Web Development",
-    skills: ["React", "Next.js", "TypeScript", "Node.js"],
+    skills: ["Architecture", "APIs", ".js", ".php", "databases"],
     colorClass: "text-neon-cyan",
     bgClass: "bg-neon-cyan/10",
     borderClass: "border-neon-cyan/30",
+  },
+  {
+    category: "Blockchain",
+    skills: ["Web3", "GamFi", "NFTs"],
+    colorClass: "text-neon-purple",
+    bgClass: "bg-neon-purple/10",
+    borderClass: "border-neon-purple/30",
   },
   {
     category: "Tools & Others",
@@ -32,6 +32,13 @@ const skillCategories = [
     colorClass: "text-ghibli-yellow",
     bgClass: "bg-ghibli-yellow/10",
     borderClass: "border-ghibli-yellow/30",
+  },
+  {
+    category: "Approach",
+    skills: ["Collaboration", "Problem Solving", "Fun"],
+    colorClass: "text-ghibli-green",
+    bgClass: "bg-ghibli-green/10",
+    borderClass: "border-ghibli-green/30",
   },
 ];
 
@@ -51,10 +58,10 @@ export default function Skills() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl md:text-6xl font-futuristic font-bold mb-16 text-center">
-            <span className="text-gradient">Skills</span>
+            <span className="text-gradient">How?</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.category}

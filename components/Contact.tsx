@@ -3,14 +3,20 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Twitter, Mail, Github, ExternalLink } from "lucide-react";
+import { Twitter, Mail, Github, ExternalLink, Linkedin } from "lucide-react";
 
 const socialLinks = [
   {
     name: "Twitter",
     icon: Twitter,
     url: "https://twitter.com/driule_io",
-    color: "text-neon-cyan hover:text-neon-pink",
+    color: "text-neon-green hover:text-neon-cyan",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/andrius-ja%C5%A1kauskas/",
+    color: "text-gray-400 hover:text-neon-cyan",
   },
   {
     name: "GitHub",
@@ -42,7 +48,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl md:text-6xl font-futuristic font-bold mb-8">
-            <span className="text-gradient">Get in Touch</span>
+            <span className="text-gradient">Contact</span>
           </h2>
 
           <motion.p
@@ -51,8 +57,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Interested in collaborating? Have a project in mind? Let&apos;s connect and build something
-            amazing together.
+            Interested in projects and collaborations.
           </motion.p>
 
           <motion.div
@@ -74,7 +79,11 @@ export default function Contact() {
                   transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`flex items-center gap-3 px-6 py-4 bg-space-light/50 backdrop-blur-sm rounded-xl border border-neon-cyan/20 hover:border-neon-cyan/50 transition-all duration-300 ${link.color}`}
+                  className={`flex items-center gap-3 px-6 py-4 bg-space-light/50 backdrop-blur-sm rounded-xl border transition-all duration-300 ${link.color} ${
+                    index === 0
+                      ? "border-neon-green/20 hover:border-neon-green/50"
+                      : "border-neon-cyan/20 hover:border-neon-cyan/50"
+                  }`}
                 >
                   <Icon className="w-5 h-5" />
                   <span className="font-medium">{link.name}</span>
@@ -84,14 +93,6 @@ export default function Contact() {
             })}
           </motion.div>
 
-          <motion.div
-            className="text-gray-400 text-sm"
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            <p>Always open to interesting projects and collaborations.</p>
-          </motion.div>
         </motion.div>
       </div>
     </section>
