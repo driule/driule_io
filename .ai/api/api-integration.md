@@ -70,7 +70,7 @@ For SSG/SSR:
 ```tsx
 // app/projects/page.tsx
 async function getProjects() {
-  const res = await fetch('https://api.example.com/projects');
+  const res = await fetch('/api/projects');
   return res.json();
 }
 

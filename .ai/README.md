@@ -1,6 +1,7 @@
 # AI Documentation
 
 **Last Updated**: 2025-11-17
+**Version**: 1.0.0
 
 > This directory contains AI assistant documentation for this frontend web application.
 > Documentation is automatically managed by [AI Contextor](https://github.com/driule/ai-contextor).

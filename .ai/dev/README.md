@@ -1,6 +1,7 @@
 # Development Tasks
 
 **Last Updated**: 2025-11-17
+**Version**: 1.0.0
 
 > This directory contains temporary development documentation for active tasks.
 > Task directories are gitignored and should be cleaned up when tasks are completed.
