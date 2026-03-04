@@ -50,7 +50,7 @@ const projects: Project[] = [
     tags: ["HealthTech", "Biomarkers", "OCR", "Automation"],
     color: "from-neon-cyan to-neon-purple",
     link: "https://medicalhistory.app",
-    github: "/MedicalHistory",
+    github: "https://github.com/MedicalHistory",
   },
 ];
 
