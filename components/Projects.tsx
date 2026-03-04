@@ -115,11 +115,11 @@ export default function Projects() {
                       <a
                         href={project.link}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         className="flex items-center gap-2 text-neon-cyan hover:text-neon-green transition-colors"
                       >
                         <ExternalLink className="w-4 h-4" />
-                        <span className="text-sm">Website</span>
+                        <span className="text-sm">{project.title}</span>
                       </a>
                     )}
                     {project.npm && (
