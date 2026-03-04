@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Github, Package, Linkedin } from "lucide-react";
+import { Github, Package, Linkedin, ExternalLink } from "lucide-react";
 
 interface Project {
   title: string;
@@ -42,6 +42,15 @@ const projects: Project[] = [
     link: "https://www.npmjs.com/package/ai-contextor",
     github: "https://github.com/driule/ai-contextor",
     npm: "https://www.npmjs.com/package/ai-contextor",
+  },
+  {
+    title: "medicalhistory.app",
+    description:
+      "MedicalHistory.app helps users organize medical records and track laboratory results over time.",
+    tags: ["HealthTech", "Biomarkers", "OCR", "Automation"],
+    color: "from-neon-cyan to-neon-purple",
+    link: "https://medicalhistory.app",
+    github: "/MedicalHistory",
   },
 ];
 
@@ -102,6 +111,17 @@ export default function Projects() {
                   </div>
 
                   <div className="flex gap-4">
+                    {project.link !== "#" && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-neon-cyan hover:text-neon-green transition-colors"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span className="text-sm">Website</span>
+                      </a>
+                    )}
                     {project.npm && (
                       <a
                         href={project.npm}
