@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Github, Package, Linkedin, ExternalLink } from "lucide-react";
+import { Github, Linkedin, ExternalLink } from "lucide-react";
 
 interface Project {
   title: string;
@@ -12,7 +12,6 @@ interface Project {
   color: string;
   link: string;
   github: string;
-  npm?: string;
   linkedin?: string;
 }
 
@@ -35,13 +34,13 @@ const projects: Project[] = [
     github: "https://github.com/codyfight",
   },
   {
-    title: "AI Contextor",
-    description: "Developer tool. Streamlines AI documentation. Manages project context.",
-    tags: ["Dev Tools", "Productivity", "Open Source", "AI", "documentation"],
+    title: "Quantaris",
+    description:
+      "Deterministic turn-based strategy game where humans and AI compete as equals with no RNG.",
+    tags: ["Game Dev", "Strategy", "AI", "API-first", "Open Source"],
     color: "from-neon-pink to-ghibli-green",
-    link: "https://www.npmjs.com/package/ai-contextor",
-    github: "https://github.com/driule/ai-contextor",
-    npm: "https://www.npmjs.com/package/ai-contextor",
+    link: "https://quantaris.live",
+    github: "https://github.com/quantaris-live",
   },
   {
     title: "medicalhistory.app",
@@ -120,17 +119,6 @@ export default function Projects() {
                       >
                         <ExternalLink className="w-4 h-4" />
                         <span className="text-sm">{project.title}</span>
-                      </a>
-                    )}
-                    {project.npm && (
-                      <a
-                        href={project.npm}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-neon-green hover:text-neon-cyan transition-colors"
-                      >
-                        <Package className="w-4 h-4" />
-                        <span className="text-sm">npm</span>
                       </a>
                     )}
                     {project.github !== "#" && (
