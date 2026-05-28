@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Twitter, Github, ExternalLink, Linkedin } from "lucide-react";
+import { Twitter, Github, ExternalLink } from "lucide-react";
 
 const socialLinks = [
   {
@@ -11,12 +11,6 @@ const socialLinks = [
     icon: Twitter,
     url: "https://twitter.com/driule_io",
     color: "text-neon-green hover:text-neon-cyan",
-  },
-  {
-    name: "LinkedIn",
-    icon: Linkedin,
-    url: "https://www.linkedin.com/in/andrius-ja%C5%A1kauskas/",
-    color: "text-gray-400 hover:text-neon-cyan",
   },
   {
     name: "GitHub",

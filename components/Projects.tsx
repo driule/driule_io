@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Github, Linkedin, ExternalLink } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 interface Project {
   title: string;
@@ -12,7 +12,6 @@ interface Project {
   color: string;
   link: string;
   github: string;
-  linkedin?: string;
 }
 
 const projects: Project[] = [
@@ -23,7 +22,6 @@ const projects: Project[] = [
     color: "from-neon-cyan to-neon-green",
     link: "#",
     github: "#",
-    linkedin: "https://www.linkedin.com/in/andrius-ja%C5%A1kauskas/",
   },
   {
     title: "Codyfight",
@@ -130,17 +128,6 @@ export default function Projects() {
                       >
                         <Github className="w-4 h-4" />
                         <span className="text-sm">Code</span>
-                      </a>
-                    )}
-                    {project.linkedin && (
-                      <a
-                        href={project.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-gray-400 hover:text-neon-cyan transition-colors"
-                      >
-                        <Linkedin className="w-4 h-4" />
-                        <span className="text-sm">LinkedIn</span>
                       </a>
                     )}
                   </div>
